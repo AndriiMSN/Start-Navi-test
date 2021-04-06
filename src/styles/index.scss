@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Aventa";
+  src: url(/src/assets/fonts/Averta-Regular.woff);
+}
+
+body {
+  font-family: 'Aventa', sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  min-height: 100vh;
+  padding-top: 4vh;
+
+  .container-game {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 50px;
+
+    &-action {
+      flex: 0 0 auto;
+      min-width: 250px;
+
+
+      .mode {
+        display: flex;
+        justify-content: space-between;
+
+        .form-select {
+          flex: 0 1 100%;
+        }
+
+        .btn {
+          flex: 0 0 fit-content;
+          margin-left: 15px;
+        }
+      }
+    }
+
+    &-hover {
+      flex: 0 1 100%;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      flex-direction: column;
+
+      .item {
+        background: #FBF8E3;
+        border-radius: 8px;
+        margin: 15px 0;
+        padding: 17px;
+
+        color: #AC986E;
+        font-weight: bold;
+      }
+    }
+
+  }
+}
